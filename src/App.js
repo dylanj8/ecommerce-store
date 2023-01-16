@@ -28,11 +28,11 @@ function App() {
         <Route exact path="/cart">
           <CartPage />
         </Route>
-        <Route exact path="/products/:id" children={<SingleProduct />}>
-          <SingleProduct />
-        </Route>
         <Route exact path="/products">
           <Products />
+        </Route>
+        <Route exact path="/products/:id" children={<SingleProduct />}>
+          <SingleProduct />
         </Route>
         <Route exact path="/checkout">
           <CheckoutPage />
